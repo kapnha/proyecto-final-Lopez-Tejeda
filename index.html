@@ -7,10 +7,16 @@
     <title>Delia * Sabi - Jewelry</title>
     <link rel="shortcut icon" href="./imagenes/favicon.png">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <section>
+        <section id="contenedor__nav__responsive">
+            <a href="javascript:void(0);" class="icon" onclick="abrirNav()">
+                <i class="fa fa-bars" id="icono__barras"></i> Menú
+            </a>
+        </section>
+        <section id="contendor__menu">
             <nav>
                 <ul>
                     <li><a href="./index.html">Inicio</a></li>
@@ -24,7 +30,10 @@
         <section id="logo__header">
             <a href="./index.html"><img src="./imagenes/logo-delia-sabi.png" alt="logo"></a>
         </section>
-        <section>
+        <section id="contenedor__redes">
+            <a href="javascript:void(0);" class="icon" onclick="abrirRedes()">
+                Contacto <i class="fa fa-angle-down" id="icono__redes"></i>
+            </a>
             <p id="contenedor__redes__header">
                 Get In Touch <span></span>
                 <a href="https://web.whatsapp.com/" target="_blank"><img src="./imagenes/icon-social-whatsapp.png" alt="whatsapp"></a>
@@ -32,7 +41,31 @@
                 <a href="https://www.instagram.com/" target="_blank"><img src="./imagenes/icon-social-instagram.png" alt=""></a>
             </p>
         </section>
-    </header> 
+    </header>
+    <script>
+        function abrirNav() {
+          var contenedor_nav = document.getElementById("contendor__menu");
+          var icono_nav = document.getElementById("icono__barras");
+          if (contenedor_nav.className === "abierto") {
+            contenedor_nav.className = "";
+            icono_nav.className = "fa fa-bars";
+          } else {
+            contenedor_nav.className = "abierto";
+            icono_nav.className = "fa fa-times";
+          }
+        }
+        function abrirRedes() {
+          var contenedor_redes = document.getElementById("contenedor__redes__header");
+          var icono_redes = document.getElementById("icono__redes");
+          if (contenedor_redes.className === "abierto") {
+            contenedor_redes.className = "";
+            icono_redes.className = "fa fa-angle-down";
+          } else {
+            contenedor_redes.className = "abierto";
+            icono_redes.className = "fa fa-angle-up";
+          }
+        }
+    </script>
 
     <!--Contenido-->
     <main>

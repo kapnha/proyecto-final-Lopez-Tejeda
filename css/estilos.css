@@ -201,6 +201,11 @@ header nav ul{
     width: 200px;
 }
 
+#contenedor__redes a.icon, 
+#contenedor__nav__responsive{
+    display: none;
+}
+
 /*Estilos Contenido Home*/
 
 #banner__inicio{
@@ -451,8 +456,64 @@ footer{
 
 /*solo para ocultar el nav mientras aprendo a hacer el menu hamburguesa*/
 @media screen and (max-width: 1159px) {
-    header nav, #contenedor__redes__header{
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    header section{
+        flex-basis: 33.3%;
+    }
+
+    header nav ul{
+        margin-left: 0;
+    }
+
+    #contenedor__redes a.icon, 
+    #contenedor__nav__responsive{
+        display: inherit;
+    }
+
+    #contenedor__nav__responsive a.icon{
+         margin-left: 20px;
+    }
+
+    #contenedor__redes{
+        text-align: right;
+    }
+
+    #contenedor__redes a.icon{
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #contendor__menu{
         display: none;
+        margin-top: 40px;
+        order: 2;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #contendor__menu.abierto{
+        display: block;
+    }
+
+    #contenedor__redes__header{
+        display: none;
+        font-size: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+        position: absolute;
+        right: 0;
+    }
+
+    #contenedor__redes__header span{
+        display: none;
+    }
+
+    #contenedor__redes__header.abierto{
+        display: block;
     }
 }
 
