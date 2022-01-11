@@ -69,35 +69,31 @@
     
     <!--Contenido-->
     <main>
-        <section>
-            <div>
+        <section id="contenedor__form">
+            <div id="contenedor__info__contacto" class="columna__6" >
                 <h1 class="serif texto__72">Get In Touch</h1>
                 <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                <form action="enviar.php" method="post">
-                    <div>
-                        <label for="nombre"> Your Name: </label>
-                        <input type="text" id="nombre" name="nombre" required>
+                <form id="formulario__contacto" action="enviar.php" method="post">
+                    <div id="input__nombre">
+                        <input type="text" id="nombre" name="nombre" class="input" required placeholder="Your Name:">
                     </div>
-                    <div>
-                        <label for="correo">Your E-mail: </label>
-                        <input type="email" id="correo" name="correo" required>
+                    <div id="input__correo">
+                        <input type="email" id="correo" name="correo" class="input" required placeholder="Your E-mail:">
                     </div>
-                    <div>
-                        <label for="telefono">Your Phone: </label>
-                        <input type="tel" id="telefono" name="telefono" required>
+                    <div id="input__telefono">
+                        <input type="tel" id="telefono" name="telefono" class="input" required placeholder="Your Phone:">
                     </div>
-                    <div>
-                        <label for="mensaje">Your Message: </label>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="1"></textarea>
+                    <div id="input__mensaje">
+                        <textarea id="mensaje" name="mensaje" class="input" cols="30" rows="3" placeholder="Your Message:"></textarea>
                     </div>
-                    <div>
-                        <input type="submit" value="Send">
+                    <div id="input__enviar">
+                        <input class="boton__secundario" type="submit" value="Send Form">
                     </div>
                 </form>
             </div>
         </section>
-        <section>
-            <div>
+        <section id="contenedor__ubicacion">
+            <div id="contenedor__ubicacion__info" class="columna__2">
                 <p><strong>Address</strong></p>
                 <p>Lorem imsum #580 <br> aliquam erat volutpat <br> State, Country.</p>
                 <p><strong>Phone</strong></p>
@@ -105,7 +101,7 @@
                 <p><strong>E-mail</strong></p>
                 <p><a href="mailto:hello@deliasabi.com">hello@deliasabi.com</a></p>
             </div>
-            <div>
+            <div id="contenedor__ubicacion__mapa" class="columna__6">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5311941597643!2d-103.29880268550492!3d20.688643404678945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b16c1bd8ad5d%3A0x8dfecb17cadcdf33!2sGran%20Terraza%20Oblatos!5e0!3m2!1ses-419!2smx!4v1637731746004!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </section>

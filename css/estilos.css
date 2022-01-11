@@ -27,6 +27,17 @@ h1{
     font-weight: inherit;
 }
 
+form input, form textarea{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+form input:focus, form textarea:focus{
+    border: 1px solid #232323;
+    box-shadow: none;
+    outline: none;
+}
+
 /*Estilos Generales*/
 
 .texto__negro{
@@ -106,6 +117,10 @@ main > section{
     color: #232323;
 }
 
+.boton__lineal:active{
+    background-color: #C0A498;
+}
+
 .boton__secundario{
     background-color: #232323;
     border: solid 1px #232323;
@@ -122,6 +137,15 @@ main > section{
     color: #232323;
 }
 
+.boton__secundario:active{
+    background-color: #381606;
+    color: #C0A498;
+}
+
+.columna__2{
+    width: 16.64%;
+}
+
 .columna__5{
     width: 41.5%;
 }
@@ -132,6 +156,10 @@ main > section{
 
 .columna__7{
     width: 58.3%;
+}
+
+.columna__8{
+    width: 66.56%;
 }
 
 /*Estilos Header*/
@@ -155,6 +183,10 @@ nav ul li a{
 
 nav ul li a:hover{
     transform: translateY(-7px);
+}
+
+nav ul li a:visited{
+    color: #381606;
 }
 
 header{
@@ -288,7 +320,13 @@ header nav ul{
 
 #colecciones__productos article img{
     width: 100%;
+    transition: all ease-in-out 0.3s;
 }
+
+#colecciones__productos article img:hover{
+    transform: scale(1.05,1.05);
+}
+
 
 #colecciones__productos article h4{
     margin: 20px 0;
@@ -398,6 +436,107 @@ header nav ul{
     padding: 0 21.4%;
     padding-bottom: 100px;
     margin: 0;
+}
+
+/*Estilos Lifestyle*/
+
+#contenedor__lifestyle{
+    margin: 100px 0;
+}
+
+#titulo__lifestyle{
+    flex-basis: 33%;
+}
+
+#titulo__lifestyle h1{
+    transform: rotate(-90deg);
+    margin-top: 164px;
+}
+
+#contenedor__galeria__lifestyle{
+    display: flex;
+    flex-basis: 67%;
+}
+
+#contenedor__galeria__lifestyle > div{
+    margin: 0 10px;
+    flex-basis: 37.5%;
+}
+
+#contenedor__galeria__lifestyle > div#columna__galeria__2{
+    flex-basis: 25%;
+}
+
+#contenedor__galeria__lifestyle article{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contenedor__galeria__lifestyle article img{
+    height: auto;
+    width: 100%;
+}
+
+/*Estilos Contacto*/
+
+#contenedor__form{
+    justify-content: center;
+    padding-top: 120px;
+}
+
+#contenedor__info__contacto h1{
+    text-align: center;
+}
+
+#contenedor__info__contacto p{
+    margin: 40px 0;
+    padding: 0 115px;
+    text-align: center;
+}
+
+#formulario__contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 115px;
+}
+
+#formulario__contacto #input__nombre, #input__mensaje{
+    width: 100%;
+}
+
+#formulario__contacto #input__correo, #input__telefono{
+    width: 50%;
+}
+
+#formulario__contacto div:nth-child(2){
+    padding-right: 15px;
+}
+
+#formulario__contacto #input__enviar{
+    margin-top: 40px;
+}
+
+#contenedor__ubicacion{
+    justify-content: center;
+    padding: 120px 0;
+}
+
+#contenedor__ubicacion__info, #contenedor__ubicacion__mapa{
+    padding: 0 20px;
+}
+
+#contenedor__ubicacion__mapa iframe{ 
+    width: 100%;
+}
+
+.input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #232323;
+    height: 40px;
+    margin: 10px 0;
+    width: 100%;
 }
 
 /*Estilos Footer*/
@@ -690,6 +829,80 @@ footer{
         padding: 0px 45px;
     }
 
+    /*responsive lifestyle*/
+
+    #contenedor__lifestyle{
+        flex-wrap: wrap;
+    }
+
+    #titulo__lifestyle{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    #titulo__lifestyle h1{
+        transform: none;
+        font-size: 72px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #contenedor__galeria__lifestyle{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    #contenedor__galeria__lifestyle > div{
+        margin: 0px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+        flex-basis: 100%;
+    }
+
+    /*responsive contacto*/
+
+    #contenedor__form{
+        padding-top: 80px;
+    }
+
+    #contenedor__form .columna__6 {
+        width: 100%;
+    }
+
+    #contenedor__info__contacto p {
+        padding: 0;
+    }
+
+    #formulario__contacto {
+        padding: 0;
+    }
+
+    #formulario__contacto #input__correo, #input__telefono {
+        width: 100%;
+    }
+
+    #formulario__contacto div:nth-child(2) {
+        padding-right: 0;
+    }
+
+    #contenedor__ubicacion{
+        flex-wrap: wrap-reverse;
+        padding: 60px 0;
+    }
+    
+    #contenedor__ubicacion .columna__2{
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    #contenedor__ubicacion .columna__6{
+        width: 100%;
+    }
+
 }
 
 /*Celulares Grandes*/
@@ -859,6 +1072,72 @@ footer{
         padding: 0px 45px;
     }
 
+     /*responsive lifestyle*/
+
+     #contenedor__lifestyle{
+        flex-wrap: wrap;
+    }
+
+    #titulo__lifestyle{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    #titulo__lifestyle h1{
+        transform: none;
+        font-size: 72px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #contenedor__galeria__lifestyle{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    #contenedor__galeria__lifestyle > div{
+        margin: 0px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+        flex-basis: 100%;
+    }
+
+    /*responsive contacto*/
+
+    #contenedor__form{
+        padding-top: 80px;
+    }
+
+    #contenedor__form .columna__6 {
+        width: 100%;
+    }
+
+    #contenedor__info__contacto p {
+        padding: 0;
+    }
+
+    #formulario__contacto {
+        padding: 0;
+    }
+
+    #contenedor__ubicacion{
+        flex-wrap: wrap-reverse;
+        padding: 60px 0;
+    }
+    
+    #contenedor__ubicacion .columna__2{
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    #contenedor__ubicacion .columna__6{
+        width: 100%;
+    }
+
 }
 
 /*Tablets Vertical*/
@@ -931,6 +1210,95 @@ footer{
     #valores__grid{
         grid-gap: 40px 60px;
     }
+
+    /*responsive lifestyle*/
+
+    #titulo__lifestyle{
+        flex-basis: 20%;
+    }
+    
+    #titulo__lifestyle h1{
+       font-size: 72px;
+       margin-top: 99px;
+    }
+    
+    #contenedor__galeria__lifestyle{
+        flex-basis: 80%;
+    }
+
+    #contenedor__galeria__lifestyle{
+        flex-wrap: wrap;
+    }
+
+    #contenedor__galeria__lifestyle > div{
+        margin: 0px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+        flex-basis: 100%;
+    }
+
+    #contenedor__lifestyle{
+        flex-wrap: wrap;
+    }
+
+    #titulo__lifestyle{
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    #titulo__lifestyle h1{
+        transform: none;
+        font-size: 72px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #contenedor__galeria__lifestyle{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    #contenedor__galeria__lifestyle > div{
+        margin: 0px;
+        flex-basis: 100%;
+        width: 100%;
+    }
+    
+    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+        flex-basis: 100%;
+    }
+
+    /*responsive contacto*/
+
+    #contenedor__form{
+        padding-top: 80px;
+    }
+
+    #contenedor__form .columna__6 {
+        width: 100%;
+    }
+
+    #formulario__contacto {
+        padding: 0 80px;
+    }
+
+    #contenedor__ubicacion{
+        flex-wrap: wrap-reverse;
+        padding: 60px 0;
+    }
+    
+    #contenedor__ubicacion .columna__2{
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    #contenedor__ubicacion .columna__6{
+        width: 100%;
+    }
 }
 
 /*Tablets Horizontal*/
@@ -982,5 +1350,30 @@ footer{
 
     #valores__grid{
         grid-gap: 40px 60px;
+    }
+
+    /*responsive lifestyle*/
+
+    #titulo__lifestyle{
+        flex-basis: 20%;
+    }
+    
+    #titulo__lifestyle h1{
+       font-size: 72px;
+       margin-top: 99px;
+    }
+    
+    #contenedor__galeria__lifestyle{
+        flex-basis: 80%;
+    }
+
+    /*responsive contacto*/
+
+    #contenedor__form{
+        padding-top: 80px;
+    }
+
+    #contenedor__info__contacto p, #formulario__contacto{
+        padding: 0;
     }
 }
