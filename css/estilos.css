@@ -1,1379 +1,1349 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Prata&display=swap');
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Prata&display=swap");
+.texto__14 {
+  font-size: 14px;
+}
+
+.texto__18 {
+  font-size: 18px;
+}
+
+.texto__24 {
+  font-size: 24px;
+}
+
+.texto__90 {
+  font-size: 90px;
+  line-height: 1.11em;
+}
+
+.texto__72 {
+  font-size: 72px;
+}
+
+.texto__120 {
+  font-size: 120px;
+}
+
+.serif {
+  font-family: 'Prata', serif;
+  font-weight: inherit;
+}
+
+.texto__upper {
+  text-transform: uppercase;
+}
+
+.texto__negro {
+  color: #232323;
+}
+
+.texto__blanco {
+  color: #ffffff;
+}
+
+.fondo__crema {
+  background-color: #E7DBD7;
+}
+
+.fondo__marron {
+  background-color: #9C6C5B;
+}
+
+.fondo__beige {
+  background-color: #C0A498;
+}
+
+.fondo__champagne {
+  background-color: #E4D7CE;
+}
 
 /*Reset*/
-
-*{
-    box-sizing: border-box;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color: #E7DBD7;
-    color: #232323;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #E7DBD7;
+  color: #232323;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-h1{
-    font-weight: inherit;
+h1 {
+  font-weight: inherit;
 }
 
-form input, form textarea{
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+form input, form textarea {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
 }
 
-form input:focus, form textarea:focus{
-    border: 1px solid #232323;
-    box-shadow: none;
-    outline: none;
+form input:focus, form textarea:focus {
+  border: 1px solid #232323;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 
 /*Estilos Generales*/
-
-.texto__negro{
-    color: #232323;
+main > section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 40px;
 }
 
-.texto__blanco{
-    color: #ffffff;
+.boton__lineal {
+  border: solid 1px #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-.fondo__crema{
-    background-color: #E7DBD7;
+.boton__lineal:hover {
+  background-color: #ffffff;
+  color: #232323;
 }
 
-.fondo__marron{
-    background-color: #9C6C5B;
+.boton__lineal:active {
+  background-color: #C0A498;
 }
 
-.fondo__beige{
-    background-color: #C0A498;
+.boton__secundario {
+  background-color: #232323;
+  border: solid 1px #232323;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-.fondo__champagne{
-    background-color: #E4D7CE;
+.boton__secundario:hover {
+  background-color: #C0A498;
+  color: #232323;
 }
 
-.texto__upper{
-    text-transform: uppercase;
+.boton__secundario:active {
+  background-color: #381606;
+  color: #ffffff;
 }
 
-.texto__14{
-    font-size: 14px;
+.columna__2 {
+  width: 16.64%;
 }
 
-.texto__18{
-    font-size: 18px;
+.columna__5 {
+  width: 41.5%;
 }
 
-.texto__24{
-    font-size: 24px;
+.columna__6 {
+  width: 50%;
 }
 
-.texto__90{
-    font-size: 90px;
-    line-height: 1.11em;
+.columna__7 {
+  width: 58.3%;
 }
 
-.texto__72{
-    font-size: 72px;
-}
-
-.texto__120{
-    font-size: 120px;
-}
-
-.serif{
-    font-family: 'Prata', serif;
-    font-weight: inherit;
-}
-
-main > section{
-    display: flex;
-    padding: 0 40px;
-}
-
-.boton__lineal{
-    border: solid 1px #ffffff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 18px;
-    transition: all ease-in-out 0.3s;
-}
-
-.boton__lineal:hover{
-    background-color: #ffffff;
-    color: #232323;
-}
-
-.boton__lineal:active{
-    background-color: #C0A498;
-}
-
-.boton__secundario{
-    background-color: #232323;
-    border: solid 1px #232323;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 18px;
-    transition: all ease-in-out 0.3s;
-}
-
-.boton__secundario:hover{
-    background-color: #C0A498;
-    color: #232323;
-}
-
-.boton__secundario:active{
-    background-color: #381606;
-    color: #C0A498;
-}
-
-.columna__2{
-    width: 16.64%;
-}
-
-.columna__5{
-    width: 41.5%;
-}
-
-.columna__6{
-    width: 50%;
-}
-
-.columna__7{
-    width: 58.3%;
-}
-
-.columna__8{
-    width: 66.56%;
+.columna__8 {
+  width: 66.56%;
 }
 
 /*Estilos Header*/
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li{
-    display: inline-block;
-    margin: 5px;
+nav ul li {
+  display: inline-block;
+  margin: 5px;
 }
 
-nav ul li a{
-    display: inline-block;
-    padding: 5px;
-    transition: all ease-in-out 0.3s;
+nav ul li a {
+  display: inline-block;
+  padding: 5px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-nav ul li a:hover{
-    transform: translateY(-7px);
+nav ul li a:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
-nav ul li a:visited{
-    color: #381606;
+nav ul li a:visited {
+  color: #381606;
 }
 
-header{
-    align-items: center;
-    display: flex;
-    margin-top: 35px;
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
 }
 
-header section{
-    width: 50%;
+header nav ul {
+  margin-left: 25px;
 }
 
-header nav ul{
-    margin-left: 25px;
+header section {
+  width: 50%;
 }
 
-#contenedor__redes__header{
-    margin-right: 40px;
-    text-align: right;
+#contenedor__redes__header {
+  margin-right: 40px;
+  text-align: right;
 }
 
-#contenedor__redes__header span{
-    background-color: black;
-    display: inline-block;
-    height: 1px;
-    margin-left: 15px;
-    vertical-align: middle;
-    width: 32px;
+#contenedor__redes__header span {
+  background-color: black;
+  display: inline-block;
+  height: 1px;
+  margin-left: 15px;
+  vertical-align: middle;
+  width: 32px;
 }
 
-#contenedor__redes__header a{
-    display: inline-block;
-    margin-left: 15px;
-    transition: all ease-in-out 0.3s;
-    vertical-align: middle;
+#contenedor__redes__header a {
+  display: inline-block;
+  margin-left: 15px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  vertical-align: middle;
 }
 
-#contenedor__redes__header a:hover{
-    transform: translateY(-7px);
+#contenedor__redes__header a:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
-#logo__header{
-    text-align: center;
-    width: 200px;
+#logo__header {
+  text-align: center;
+  width: 200px;
 }
 
-#contenedor__redes a.icon, 
-#contenedor__nav__responsive{
-    display: none;
+#contenedor__redes a.icon,
+#contenedor__nav__responsive {
+  display: none;
 }
 
 /*Estilos Contenido Home*/
-
-#banner__inicio{
-    position: relative;
+#banner__inicio {
+  position: relative;
 }
 
-#banner__inicio h1{
-    margin: 280px auto;
-    position: relative;
-    text-align: center;
-    width: 600px;
-    z-index: 2;
+#banner__inicio h1 {
+  margin: 280px auto;
+  position: relative;
+  text-align: center;
+  width: 600px;
+  z-index: 2;
 }
 
-#banner__inicio__img{
-    animation-name: home;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+#banner__inicio__img {
+  -webkit-animation-name: home;
+          animation-name: home;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 549px;
+  left: 50%;
+  margin-left: -183px;
+  margin-top: -274.5px;
+  position: absolute;
+  top: 50%;
+  width: 366px;
+}
+
+@-webkit-keyframes home {
+  0% {
     background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 549px;
-    left: 50%;
-    margin-left: -183px;
-    margin-top: -274.5px;
-    position: absolute;
-    top: 50%;
-    width: 366px;
+  }
+  25% {
+    background-image: url(../imagenes/delia-sabi-banner-home-2.jpeg);
+  }
+  50% {
+    background-image: url(../imagenes/delia-sabi-banner-home-3.jpeg);
+  }
+  75% {
+    background-image: url(../imagenes/delia-sabi-banner-home-4.jpeg);
+  }
+  100% {
+    background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
+  }
 }
 
-@keyframes home{
-    0% {background-image: url(../imagenes/delia-sabi-banner-home.jpeg);}
-    25%{background-image: url(../imagenes/delia-sabi-banner-home-2.jpeg);}
-    50%{background-image: url(../imagenes/delia-sabi-banner-home-3.jpeg);}
-    75%{background-image: url(../imagenes/delia-sabi-banner-home-4.jpeg);}
-    100%{background-image: url(../imagenes/delia-sabi-banner-home.jpeg);}
+@keyframes home {
+  0% {
+    background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
+  }
+  25% {
+    background-image: url(../imagenes/delia-sabi-banner-home-2.jpeg);
+  }
+  50% {
+    background-image: url(../imagenes/delia-sabi-banner-home-3.jpeg);
+  }
+  75% {
+    background-image: url(../imagenes/delia-sabi-banner-home-4.jpeg);
+  }
+  100% {
+    background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
+  }
 }
 
-#banner__inicio a{
-    bottom: 85px;
-    display: inline-block;
-    left: 50%;
-    margin-left: -64.5px;
-    position: absolute;
+#banner__inicio a {
+  bottom: 85px;
+  display: inline-block;
+  left: 50%;
+  margin-left: -64.5px;
+  position: absolute;
 }
 
-#banner__inicio a span{
-    background-color: black;
-    display: block;
-    height: 40px;
-    margin: 0 auto;
-    width: 1px;
+#banner__inicio a span {
+  background-color: black;
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  width: 1px;
 }
 
-#home__colecciones{
-    justify-content: center;
-    padding-top: 200px;
-    text-align: center;
+#home__colecciones {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 200px;
+  text-align: center;
 }
 
-#home__colecciones p{
-    padding: 0 21.4%;
-    margin: 0;
+#home__colecciones p {
+  padding: 0 21.4%;
+  margin: 0;
 }
 
-#home__colecciones h2{
-    margin: 0 0 60px;
+#home__colecciones h2 {
+  margin: 0 0 60px;
 }
 
-#colecciones__productos{
-    padding: 100px 10px;
-    text-align: center;
+#colecciones__productos {
+  padding: 100px 10px;
+  text-align: center;
 }
 
-#colecciones__productos article{
-    margin: 0 10px;
-    width: 25%;
+#colecciones__productos article {
+  margin: 0 10px;
+  width: 25%;
 }
 
-#colecciones__productos article img{
-    width: 100%;
-    transition: all ease-in-out 0.3s;
+#colecciones__productos article img {
+  width: 100%;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-#colecciones__productos article img:hover{
-    transform: scale(1.05,1.05);
+#colecciones__productos article img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
-
-#colecciones__productos article h4{
-    margin: 20px 0;
-    padding: 0 20px;
+#colecciones__productos article h4 {
+  margin: 20px 0;
+  padding: 0 20px;
 }
 
-#colecciones__productos article p{
-    margin: 20px 0;
-    padding: 0 20px;
+#colecciones__productos article p {
+  margin: 20px 0;
+  padding: 0 20px;
 }
 
-.bloque__presentacion{
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
+.bloque__presentacion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 40px;
 }
 
-.bloque__presentacion h2{
-    margin: 0 0 20px;
-} 
-
-.bloque__presentacion p{
-    padding-right: 140px;
-    margin: 0 0 40px;
+.bloque__presentacion h2 {
+  margin: 0 0 20px;
 }
 
-.bloque__presentacion img{
-    display: block;
-    margin: 0 auto;
+.bloque__presentacion p {
+  padding-right: 140px;
+  margin: 0 0 40px;
+}
+
+.bloque__presentacion img {
+  display: block;
+  margin: 0 auto;
 }
 
 /*Estilos Contenido About*/
-
-#contenedor__inicio__about{
-    justify-content: center;
-    padding: 230px 0;
+#contenedor__inicio__about {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 230px 0;
 }
 
-#contenedor__inicio__about h1{
-    text-align: center;
+#contenedor__inicio__about h1 {
+  text-align: center;
 }
 
-#contenedor__img__about{
-    background-image: url(../imagenes/delia-sabi-about-1.jpeg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 42.18vw;
-    max-height: 600px;
-    min-height: 300px;
+#contenedor__img__about {
+  background-image: url(../imagenes/delia-sabi-about-1.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.18vw;
+  max-height: 600px;
+  min-height: 300px;
 }
 
-#contenedor__info__video{
-    align-items: center;
-    justify-content: center;
-    padding: 120px 0 60px;
+#contenedor__info__video {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 120px 0 60px;
 }
 
-#info__about{
-    width: 450px;
-    z-index: 2;
+#info__about {
+  width: 450px;
+  z-index: 2;
 }
 
-#info__about h1{
-    line-height: 1.2em;
-    margin: 0;
-    margin-bottom: 10px;
+#info__about h1 {
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
-#info__about p{
-    margin: 0;
-    padding-right: 200px;
+#info__about p {
+  margin: 0;
+  padding-right: 200px;
 }
 
-#contenedor__video__about{
-    margin-left: -120px;
-    width: 695px;
+#contenedor__video__about {
+  margin-left: -120px;
+  width: 695px;
 }
 
-#contenedor__video__about video{
-    height: auto;
-    width: 100%;
+#contenedor__video__about video {
+  height: auto;
+  width: 100%;
 }
 
-#contenedor__valores{
-    justify-content: center;
-    padding: 60px 0 120px;
+#contenedor__valores {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0 120px;
 }
 
-#valores__grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px 80px;
-    width: 1025px;
+#valores__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px 80px;
+  width: 1025px;
 }
 
 /*Estilos Productos*/
-
-#contenedor__info__collections{
-    justify-content: center;
-    padding-top: 120px;
-    text-align: center;
+#contenedor__info__collections {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 120px;
+  text-align: center;
 }
 
-#contenedor__info__collections p{
-    padding: 0 21.4%;
-    padding-bottom: 100px;
-    margin: 0;
+#contenedor__info__collections p {
+  padding: 0 21.4%;
+  padding-bottom: 100px;
+  margin: 0;
 }
 
 /*Estilos Lifestyle*/
-
-#contenedor__lifestyle{
-    margin: 100px 0;
+#contenedor__lifestyle {
+  margin: 100px 0;
 }
 
-#titulo__lifestyle{
-    flex-basis: 33%;
+#titulo__lifestyle {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
 }
 
-#titulo__lifestyle h1{
-    transform: rotate(-90deg);
-    margin-top: 164px;
+#titulo__lifestyle h1 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  margin-top: 164px;
 }
 
-#contenedor__galeria__lifestyle{
-    display: flex;
-    flex-basis: 67%;
+#contenedor__galeria__lifestyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 67%;
+      flex-basis: 67%;
 }
 
-#contenedor__galeria__lifestyle > div{
-    margin: 0 10px;
-    flex-basis: 37.5%;
+#contenedor__galeria__lifestyle > div {
+  margin: 0 10px;
+  -ms-flex-preferred-size: 37.5%;
+      flex-basis: 37.5%;
 }
 
-#contenedor__galeria__lifestyle > div#columna__galeria__2{
-    flex-basis: 25%;
+#contenedor__galeria__lifestyle > div#columna__galeria__2 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
-#contenedor__galeria__lifestyle article{
-    margin-bottom: 20px;
-    text-align: center;
+#contenedor__galeria__lifestyle article {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-#contenedor__galeria__lifestyle article img{
-    height: auto;
-    width: 100%;
+#contenedor__galeria__lifestyle article img {
+  height: auto;
+  width: 100%;
 }
 
 /*Estilos Contacto*/
-
-#contenedor__form{
-    justify-content: center;
-    padding-top: 120px;
+#contenedor__form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 120px;
 }
 
-#contenedor__info__contacto h1{
-    text-align: center;
+#contenedor__info__contacto h1 {
+  text-align: center;
 }
 
-#contenedor__info__contacto p{
-    margin: 40px 0;
-    padding: 0 115px;
-    text-align: center;
+#contenedor__info__contacto p {
+  margin: 40px 0;
+  padding: 0 115px;
+  text-align: center;
 }
 
-#formulario__contacto{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0 115px;
+#formulario__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 115px;
 }
 
-#formulario__contacto #input__nombre, #input__mensaje{
-    width: 100%;
+#formulario__contacto #input__nombre, #input__mensaje {
+  width: 100%;
 }
 
-#formulario__contacto #input__correo, #input__telefono{
-    width: 50%;
+#formulario__contacto #input__correo, #input__telefono {
+  width: 50%;
 }
 
-#formulario__contacto div:nth-child(2){
-    padding-right: 15px;
+#formulario__contacto div:nth-child(2) {
+  padding-right: 15px;
 }
 
-#formulario__contacto #input__enviar{
-    margin-top: 40px;
+#formulario__contacto #input__enviar {
+  margin-top: 40px;
 }
 
-#contenedor__ubicacion{
-    justify-content: center;
-    padding: 120px 0;
+#contenedor__ubicacion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 120px 0;
 }
 
-#contenedor__ubicacion__info, #contenedor__ubicacion__mapa{
-    padding: 0 20px;
+#contenedor__ubicacion__info, #contenedor__ubicacion__mapa {
+  padding: 0 20px;
 }
 
-#contenedor__ubicacion__mapa iframe{ 
-    width: 100%;
+#contenedor__ubicacion__mapa iframe {
+  width: 100%;
 }
 
-.input{
-    background: none;
-    border: none;
-    border-bottom: 1px solid #232323;
-    height: 40px;
-    margin: 10px 0;
-    width: 100%;
+.input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #232323;
+  height: 40px;
+  margin: 10px 0;
+  width: 100%;
 }
 
 /*Estilos Footer*/
-
-footer{
-    display: flex;
-    text-align: center;
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
 }
 
-#contenedor__info__footer{
-    padding: 60px 150px;
-    width: 60%;
+#contenedor__info__footer {
+  padding: 60px 150px;
+  width: 60%;
 }
 
-#contenedor__img__footer{
-    background-image: url(../imagenes/delia-sabi-footer.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 40%;
+#contenedor__img__footer {
+  background-image: url(../imagenes/delia-sabi-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 40%;
 }
 
-#info__footer > a{
-    display: inline-block;
-    margin-bottom: 60px;
+#info__footer > a {
+  display: inline-block;
+  margin-bottom: 60px;
 }
 
-#info__footer p{
-    margin: 0;
+#info__footer p {
+  margin: 0;
 }
 
-#social__footer{
-    margin: 40px 0;
+#social__footer {
+  margin: 40px 0;
 }
 
-#social__footer > a{
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
-    transition: all ease-in-out 0.3s;
+#social__footer > a {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
-#social__footer > a:hover{
-    transform: translateY(-7px);
+#social__footer > a:hover {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
-#nav__footer nav span{
-    background-color: black;
-    display: inline-block;
-    height: 1px;
-    margin: 0 15px;
-    vertical-align: middle;
-    width: 32px;
+#nav__footer nav span {
+  background-color: black;
+  display: inline-block;
+  height: 1px;
+  margin: 0 15px;
+  vertical-align: middle;
+  width: 32px;
 }
 
 /*Medias Queries*/
-
 /*solo para ocultar el nav mientras aprendo a hacer el menu hamburguesa*/
 @media screen and (max-width: 1159px) {
-
-    header{
+  header {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    header section{
+  }
+  header section {
+    -ms-flex-preferred-size: 33.3%;
         flex-basis: 33.3%;
-    }
-
-    header nav ul{
-        margin-left: 0;
-    }
-
-    #contenedor__redes a.icon, 
-    #contenedor__nav__responsive{
-        display: inherit;
-    }
-
-    #contenedor__nav__responsive a.icon{
-         margin-left: 20px;
-    }
-
-    #contenedor__redes{
-        text-align: right;
-    }
-
-    #contenedor__redes a.icon{
-        display: inline-block;
-        margin-right: 20px;
-    }
-
-    #contendor__menu{
-        display: none;
-        margin-top: 40px;
-        order: 2;
+  }
+  header nav ul {
+    margin-left: 0;
+  }
+  #contenedor__redes a.icon,
+  #contenedor__nav__responsive {
+    display: inherit;
+  }
+  #contenedor__nav__responsive a.icon {
+    margin-left: 20px;
+  }
+  #contenedor__redes {
+    text-align: right;
+  }
+  #contenedor__redes a.icon {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  #contendor__menu {
+    display: none;
+    margin-top: 40px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        text-align: center;
-    }
-
-    #contendor__menu.abierto{
-        display: block;
-    }
-
-    #contenedor__redes__header{
-        display: none;
-        font-size: 0;
-        margin-right: 20px;
-        margin-top: 20px;
-        position: absolute;
-        right: 0;
-    }
-
-    #contenedor__redes__header span{
-        display: none;
-    }
-
-    #contenedor__redes__header.abierto{
-        display: block;
-    }
+    text-align: center;
+  }
+  #contendor__menu.abierto {
+    display: block;
+  }
+  #contenedor__redes__header {
+    display: none;
+    font-size: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+  }
+  #contenedor__redes__header span {
+    display: none;
+  }
+  #contenedor__redes__header.abierto {
+    display: block;
+  }
 }
 
 /*Celulares Pequeños*/
-@media screen and (max-width: 575px){
-    main > section{
-        padding: 0 20px;
-    }
-
-    .texto__72{
-        font-size: 42px;
-    }
-
-    #logo__header a img{
-        display: none;
-    }
-
-    #logo__header a{
-        background-image: url(../imagenes/logo-delia-sabi-responsive.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 30px;
-        margin: 0 auto;
-        width: 70px;
-    }
-
-    #banner__inicio{
-        margin-bottom: 55px;
-        margin-top: 55px;
-    }
-
-    #banner__inicio h1{
-        margin: 235px -20px;
-    }
-
-    #banner__inicio h1 br{
-        display: none;
-    }
-
-    #banner__inicio__img{
-        height: 100%;
-        margin-left: -40%;
-        margin-top: 0;
-        top: 0;
-        width: 80%;
-    }
-
-    #banner__inicio a{
-        bottom: -20px;
-    }
-
-    #home__colecciones{
-        padding-top: 80px;
-    }
-
-    #home__colecciones h2{
-        margin: 0;
-    }
-
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
-
-    #home__colecciones .columna__7 h2{
-        font-size: 32px;
-        margin-bottom: 60px;
-    }
-
-    #home__colecciones .columna__7 p{
-        padding: 0px;
-    }
-
-    #colecciones__productos{
+@media screen and (max-width: 575px) {
+  main > section {
+    padding: 0 20px;
+  }
+  .texto__72 {
+    font-size: 42px;
+  }
+  #logo__header a {
+    background-image: url(../imagenes/logo-delia-sabi-responsive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 70px;
+  }
+  #logo__header a img {
+    display: none;
+  }
+  #banner__inicio {
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+  #banner__inicio h1 {
+    margin: 235px -20px;
+  }
+  #banner__inicio h1 br {
+    display: none;
+  }
+  #banner__inicio a {
+    bottom: -20px;
+  }
+  #banner__inicio__img {
+    height: 100%;
+    margin-left: -40%;
+    margin-top: 0;
+    top: 0;
+    width: 80%;
+  }
+  #home__colecciones {
+    padding-top: 80px;
+  }
+  #home__colecciones h2 {
+    margin: 0;
+  }
+  #home__colecciones .columna__7 {
+    width: 100%;
+  }
+  #home__colecciones .columna__7 h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  #home__colecciones .columna__7 p {
+    padding: 0px;
+  }
+  #colecciones__productos {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 40px 20px;
-    }
-
-    #colecciones__productos article{
-        margin: 0;
-        margin-bottom: 40px;
-        width: 100%;
-    }
-
-    .bloque__presentacion{
+    padding: 40px 20px;
+  }
+  #colecciones__productos article {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .bloque__presentacion {
+    -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-        padding: 40px 20px;
-    }
-
-    .bloque__presentacion h2{
-        font-size: 42px;
-    }
-
-    .bloque__presentacion p{
-        padding-right: 0;
-    }
-
-    .bloque__presentacion .columna__5{
-        text-align: center;
-        width: 100%;
-    }
-
-    .bloque__presentacion img{
-        margin-bottom: 40px;
-        width: 280px; 
-    }
-
-    #contenedor__info__footer{
-        padding: 60px 20px;
-        width: 100%;
-    }
-
-    #contenedor__img__footer{
-        display: none;
-    }
-
-    #nav__footer nav:first-child{
-        margin-bottom: 30px;
-    }
-
-    #nav__footer nav:first-child ul{
-        margin: 0 auto;
-        max-width: 280px;
-    }
-
-    #nav__footer nav span{
-        margin: 0;
-    }
-
-    /*responsive about*/
-
-    #contenedor__inicio__about{
-        padding: 120px 40px;
-    }
-
-    #contenedor__inicio__about h1{
-        font-size: 21px;
-    }
-
-    #contenedor__inicio__about .columna__6{
-        width: 100%;
-    }
-
-    #contenedor__info__video{
+    padding: 40px 20px;
+  }
+  .bloque__presentacion h2 {
+    font-size: 42px;
+  }
+  .bloque__presentacion p {
+    padding-right: 0;
+  }
+  .bloque__presentacion img {
+    margin-bottom: 40px;
+    width: 280px;
+  }
+  .bloque__presentacion .columna__5 {
+    text-align: center;
+    width: 100%;
+  }
+  #contenedor__info__footer {
+    padding: 60px 20px;
+    width: 100%;
+  }
+  #contenedor__img__footer {
+    display: none;
+  }
+  #nav__footer nav:first-child {
+    margin-bottom: 30px;
+  }
+  #nav__footer nav:first-child ul {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  #nav__footer nav span {
+    margin: 0;
+  }
+  /*responsive about*/
+  #contenedor__inicio__about {
+    padding: 120px 40px;
+  }
+  #contenedor__inicio__about h1 {
+    font-size: 21px;
+  }
+  #contenedor__inicio__about .columna__6 {
+    width: 100%;
+  }
+  #contenedor__info__video {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 100px 20px 40px;
-        text-align: center;
-    }
-
-    #contenedor__info__video h1{
-        font-size: 32px;
-        margin-bottom: 0;
-    }
-
-    #contenedor__info__video p{
-        margin: 40px 0;
-        padding-right: 0;
-    }
-
-    #contenedor__video__about{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #contenedor__valores{
-        padding: 0;
-        padding-bottom: 100px;
-    }
-
-    #valores__grid{
-        grid-gap: 0;
+    padding: 100px 20px 40px;
+    text-align: center;
+  }
+  #contenedor__info__video h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  #contenedor__info__video p {
+    margin: 40px 0;
+    padding-right: 0;
+  }
+  #contenedor__video__about {
+    margin-left: 0;
+    width: 100%;
+  }
+  #contenedor__valores {
+    padding: 0;
+    padding-bottom: 100px;
+  }
+  #valores__grid {
+    grid-gap: 0;
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-        padding: 0px 45px;
-    }
-
-    /*responsive lifestyle*/
-
-    #contenedor__lifestyle{
+    padding: 0px 45px;
+  }
+  /*responsive products*/
+  #contenedor__info__collections .columna__7 {
+    width: 100%;
+  }
+  #contenedor__info__collections {
+    padding-top: 80px;
+  }
+  #contenedor__info__collections h1 br {
+    display: none;
+  }
+  #contenedor__info__collections p {
+    padding: 0 8.4%;
+    padding-bottom: 80px;
+  }
+  /*responsive lifestyle*/
+  #contenedor__lifestyle {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    #titulo__lifestyle{
-        width: 100%;
+  }
+  #titulo__lifestyle {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #titulo__lifestyle h1{
-        transform: none;
-        font-size: 72px;
-        margin-top: 0;
-        text-align: center;
-    }
-
-    #contenedor__galeria__lifestyle{
-        width: 100%;
+  }
+  #titulo__lifestyle h1 {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 72px;
+    margin-top: 0;
+    text-align: center;
+  }
+  #contenedor__galeria__lifestyle {
+    width: 100%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #contenedor__galeria__lifestyle > div{
-        margin: 0px;
+  }
+  #contenedor__galeria__lifestyle > div {
+    margin: 0px;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        width: 100%;
-    }
-    
-    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+    width: 100%;
+  }
+  #contenedor__galeria__lifestyle > div#columna__galeria__2 {
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    /*responsive contacto*/
-
-    #contenedor__form{
-        padding-top: 80px;
-    }
-
-    #contenedor__form .columna__6 {
-        width: 100%;
-    }
-
-    #contenedor__info__contacto p {
-        padding: 0;
-    }
-
-    #formulario__contacto {
-        padding: 0;
-    }
-
-    #formulario__contacto #input__correo, #input__telefono {
-        width: 100%;
-    }
-
-    #formulario__contacto div:nth-child(2) {
-        padding-right: 0;
-    }
-
-    #contenedor__ubicacion{
+  }
+  /*responsive contacto*/
+  #contenedor__form {
+    padding-top: 80px;
+  }
+  #contenedor__form .columna__6 {
+    width: 100%;
+  }
+  #contenedor__info__contacto p {
+    padding: 0;
+  }
+  #formulario__contacto {
+    padding: 0;
+  }
+  #formulario__contacto #input__correo, #input__telefono {
+    width: 100%;
+  }
+  #formulario__contacto div:nth-child(2) {
+    padding-right: 0;
+  }
+  #contenedor__ubicacion {
+    -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-        padding: 60px 0;
-    }
-    
-    #contenedor__ubicacion .columna__2{
-        padding: 20px 20px;
-        width: 100%;
-    }
-
-    #contenedor__ubicacion .columna__6{
-        width: 100%;
-    }
-
+    padding: 60px 0;
+  }
+  #contenedor__ubicacion .columna__2 {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  #contenedor__ubicacion .columna__6 {
+    width: 100%;
+  }
 }
 
 /*Celulares Grandes*/
-@media screen and (min-width: 576px) and (max-width: 767px){
-    
-    main > section{
-        padding: 0 40px;
-    }
-
-    .texto__72{
-        font-size: 48px;
-    }
-
-    #logo__header a img{
-        display: none;
-    }
-
-    #logo__header a{
-        background-image: url(../imagenes/logo-delia-sabi-responsive.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: block;
-        height: 30px;
-        margin: 0 auto;
-        width: 70px;
-    }
-
-    #banner__inicio{
-        margin-bottom: 55px;
-        margin-top: 55px;
-    }
-
-    #banner__inicio__img{
-        height: 100%;
-        margin-left: -40%;
-        margin-top: 0;
-        top: 0;
-        width: 80%;
-    }
-
-    #banner__inicio a{
-        bottom: -20px;
-    }
-
-    #home__colecciones{
-        padding-top: 80px;
-    }
-
-    #home__colecciones h2{
-        margin: 0;
-    }
-
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
-
-    #home__colecciones .columna__7 h2{
-        font-size: 32px;
-        margin-bottom: 60px;
-    }
-
-    #home__colecciones .columna__7 p{
-        padding: 0px;
-    }
-
-    #colecciones__productos{
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  main > section {
+    padding: 0 40px;
+  }
+  .texto__72 {
+    font-size: 48px;
+  }
+  #logo__header a {
+    background-image: url(../imagenes/logo-delia-sabi-responsive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 70px;
+  }
+  #logo__header a img {
+    display: none;
+  }
+  #banner__inicio {
+    margin-bottom: 55px;
+    margin-top: 55px;
+  }
+  #banner__inicio a {
+    bottom: -20px;
+  }
+  #banner__inicio__img {
+    height: 100%;
+    margin-left: -40%;
+    margin-top: 0;
+    top: 0;
+    width: 80%;
+  }
+  #home__colecciones {
+    padding-top: 80px;
+  }
+  #home__colecciones h2 {
+    margin: 0;
+  }
+  #home__colecciones .columna__7 {
+    width: 100%;
+  }
+  #home__colecciones .columna__7 h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+  #home__colecciones .columna__7 p {
+    padding: 0px;
+  }
+  #colecciones__productos {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 60px 40px;
-    }
-
-    #colecciones__productos article{
-        margin: 0;
-        margin-bottom: 40px;
-        padding: 0 10px;
-        width: 50%;
-    }
-
-    .bloque__presentacion{
+    padding: 60px 40px;
+  }
+  #colecciones__productos article {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    width: 50%;
+  }
+  .bloque__presentacion {
+    -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-        padding: 60px 40px;
-    }
-
-    .bloque__presentacion h2{
-        font-size: 42px;
-    }
-
-    .bloque__presentacion p{
-        padding-right: 0;
-    }
-
-    .bloque__presentacion .columna__5{
-        text-align: center;
-        width: 100%;
-    }
-
-    .bloque__presentacion img{
-        margin-bottom: 40px;
-        width: 280px; 
-    }
-
-    #contenedor__info__footer{
-        padding: 80px 40px;
-        width: 100%;
-    }
-
-    #contenedor__img__footer{
-        display: none;
-    }
-
-    #nav__footer nav:first-child{
-        margin-bottom: 30px;
-    }
-
-    #nav__footer nav:first-child ul{
-        margin: 0 auto;
-        max-width: 280px;
-    }
-
-    #nav__footer nav span{
-        margin: 0;
-    }
-
-    /*responsive about*/
-
-    #contenedor__inicio__about{
-        padding: 120px 80px;
-    }
-
-    #contenedor__inicio__about h1{
-        font-size: 21px;
-    }
-
-    #contenedor__inicio__about .columna__6{
-        width: 100%;
-    }
-
-    #contenedor__info__video{
+    padding: 60px 40px;
+  }
+  .bloque__presentacion h2 {
+    font-size: 42px;
+  }
+  .bloque__presentacion p {
+    padding-right: 0;
+  }
+  .bloque__presentacion img {
+    margin-bottom: 40px;
+    width: 280px;
+  }
+  .bloque__presentacion .columna__5 {
+    text-align: center;
+    width: 100%;
+  }
+  #contenedor__info__footer {
+    padding: 80px 40px;
+    width: 100%;
+  }
+  #contenedor__img__footer {
+    display: none;
+  }
+  #nav__footer nav:first-child {
+    margin-bottom: 30px;
+  }
+  #nav__footer nav:first-child ul {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  #nav__footer nav span {
+    margin: 0;
+  }
+  /*responsive about*/
+  #contenedor__inicio__about {
+    padding: 120px 80px;
+  }
+  #contenedor__inicio__about h1 {
+    font-size: 21px;
+  }
+  #contenedor__inicio__about .columna__6 {
+    width: 100%;
+  }
+  #contenedor__info__video {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 100px 40px 40px;
-        text-align: center;
-    }
-
-    #contenedor__info__video h1{
-        font-size: 32px;
-        margin-bottom: 0;
-    }
-
-    #contenedor__info__video p{
-        margin: 40px 0;
-        padding-right: 0;
-    }
-
-    #contenedor__video__about{
-        margin-left: 0;
-        width: 100%;
-    }
-
-    #contenedor__valores{
-        padding: 0;
-        padding-bottom: 100px;
-    }
-
-    #valores__grid{
-        grid-gap: 0 40px;
+    padding: 100px 40px 40px;
+    text-align: center;
+  }
+  #contenedor__info__video h1 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+  #contenedor__info__video p {
+    margin: 40px 0;
+    padding-right: 0;
+  }
+  #contenedor__video__about {
+    margin-left: 0;
+    width: 100%;
+  }
+  #contenedor__valores {
+    padding: 0;
+    padding-bottom: 100px;
+  }
+  #valores__grid {
+    grid-gap: 0 40px;
+    -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 45px;
-    }
-
-     /*responsive lifestyle*/
-
-     #contenedor__lifestyle{
+    padding: 0px 45px;
+  }
+  /*responsive products*/
+  #contenedor__info__collections .columna__7 {
+    width: 100%;
+  }
+  #contenedor__info__collections {
+    padding-top: 80px;
+  }
+  #contenedor__info__collections p {
+    padding: 0 8.4%;
+    padding-bottom: 80px;
+  }
+  /*responsive lifestyle*/
+  #contenedor__lifestyle {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    #titulo__lifestyle{
-        width: 100%;
+  }
+  #titulo__lifestyle {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #titulo__lifestyle h1{
-        transform: none;
-        font-size: 72px;
-        margin-top: 0;
-        text-align: center;
-    }
-
-    #contenedor__galeria__lifestyle{
-        width: 100%;
+  }
+  #titulo__lifestyle h1 {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 72px;
+    margin-top: 0;
+    text-align: center;
+  }
+  #contenedor__galeria__lifestyle {
+    width: 100%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #contenedor__galeria__lifestyle > div{
-        margin: 0px;
+  }
+  #contenedor__galeria__lifestyle > div {
+    margin: 0px;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        width: 100%;
-    }
-    
-    #contenedor__galeria__lifestyle > div#columna__galeria__2{
+    width: 100%;
+  }
+  #contenedor__galeria__lifestyle > div#columna__galeria__2 {
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    /*responsive contacto*/
-
-    #contenedor__form{
-        padding-top: 80px;
-    }
-
-    #contenedor__form .columna__6 {
-        width: 100%;
-    }
-
-    #contenedor__info__contacto p {
-        padding: 0;
-    }
-
-    #formulario__contacto {
-        padding: 0;
-    }
-
-    #contenedor__ubicacion{
+  }
+  /*responsive contacto*/
+  #contenedor__form {
+    padding-top: 80px;
+  }
+  #contenedor__form .columna__6 {
+    width: 100%;
+  }
+  #contenedor__info__contacto p {
+    padding: 0;
+  }
+  #formulario__contacto {
+    padding: 0;
+  }
+  #contenedor__ubicacion {
+    -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-        padding: 60px 0;
-    }
-    
-    #contenedor__ubicacion .columna__2{
-        padding: 20px 20px;
-        width: 100%;
-    }
-
-    #contenedor__ubicacion .columna__6{
-        width: 100%;
-    }
-
+    padding: 60px 0;
+  }
+  #contenedor__ubicacion .columna__2 {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  #contenedor__ubicacion .columna__6 {
+    width: 100%;
+  }
 }
 
 /*Tablets Vertical*/
-@media screen and (min-width: 768px) and (max-width: 992px){
-    
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
-
-    #home__colecciones h2{
-        font-size: 60px;
-    }
-
-    #colecciones__productos{
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #home__colecciones .columna__7 {
+    width: 100%;
+  }
+  #home__colecciones h2 {
+    font-size: 60px;
+  }
+  #colecciones__productos {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 60px 40px;
-    }
-
-    #colecciones__productos article{
-        margin: 0;
-        margin-bottom: 40px;
-        padding: 0 10px;
-        width: 50%;
-    }
-
-    .bloque__presentacion{
-        padding: 60px 0;
-    }
-
-    .bloque__presentacion h2{
-        font-size: 48px;
-    }
-
-    .bloque__presentacion p{
-        padding-right: 80px;
-    }
-
-    .bloque__presentacion img{
-        width: 100%;
-    }
-    
-    #contenedor__info__footer{
-        padding: 60px 60px;
-    }
-
-    /*responsive about*/
-
-    #contenedor__info__video{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    #info__about{
-        width: 560px;
-    }
-    
-    #info__about h1{
-        font-size: 56px;
-    }
-
-    #info__about p{
-        padding-right: 150px;
-    }
-
-    #contenedor__valores{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    #valores__grid{
-        grid-gap: 40px 60px;
-    }
-
-    /*responsive lifestyle*/
-
-    #titulo__lifestyle{
-        flex-basis: 20%;
-    }
-    
-    #titulo__lifestyle h1{
-       font-size: 72px;
-       margin-top: 99px;
-    }
-    
-    #contenedor__galeria__lifestyle{
-        flex-basis: 80%;
-    }
-
-    #contenedor__galeria__lifestyle{
+    padding: 60px 40px;
+  }
+  #colecciones__productos article {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    width: 50%;
+  }
+  .bloque__presentacion {
+    padding: 60px 0;
+  }
+  .bloque__presentacion h2 {
+    font-size: 48px;
+  }
+  .bloque__presentacion p {
+    padding-right: 80px;
+  }
+  .bloque__presentacion img {
+    width: 100%;
+  }
+  #contenedor__info__footer {
+    padding: 60px 60px;
+  }
+  /*responsive about*/
+  #contenedor__info__video {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #info__about {
+    width: 560px;
+  }
+  #info__about h1 {
+    font-size: 56px;
+  }
+  #info__about p {
+    padding-right: 150px;
+  }
+  #contenedor__valores {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #valores__grid {
+    grid-gap: 40px 60px;
+  }
+  /*responsive products*/
+  #contenedor__info__collections {
+    padding-top: 80px;
+  }
+  #contenedor__info__collections .columna__7 {
+    width: 100%;
+  }
+  #contenedor__info__collections .columna__7 h1 {
+    font-size: 48px;
+  }
+  #contenedor__info__collections .columna__7 p {
+    padding: 0 8.4%;
+    padding-bottom: 80px;
+  }
+  /*responsive lifestyle*/
+  #contenedor__lifestyle {
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    #contenedor__galeria__lifestyle > div{
-        margin: 0px;
+  }
+  #titulo__lifestyle {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        width: 100%;
-    }
-    
-    #contenedor__galeria__lifestyle > div#columna__galeria__2{
-        flex-basis: 100%;
-    }
-
-    #contenedor__lifestyle{
+  }
+  #titulo__lifestyle h1 {
+    -webkit-transform: none;
+            transform: none;
+    font-size: 72px;
+    margin-top: 0;
+    text-align: center;
+  }
+  #contenedor__galeria__lifestyle {
+    width: 100%;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-
-    #titulo__lifestyle{
-        width: 100%;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #titulo__lifestyle h1{
-        transform: none;
-        font-size: 72px;
-        margin-top: 0;
-        text-align: center;
-    }
-
-    #contenedor__galeria__lifestyle{
-        width: 100%;
-        flex-wrap: wrap;
+  }
+  #contenedor__galeria__lifestyle > div {
+    margin: 0px;
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    }
-
-    #contenedor__galeria__lifestyle > div{
-        margin: 0px;
+    width: 100%;
+  }
+  #contenedor__galeria__lifestyle > div#columna__galeria__2 {
+    -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        width: 100%;
-    }
-    
-    #contenedor__galeria__lifestyle > div#columna__galeria__2{
-        flex-basis: 100%;
-    }
-
-    /*responsive contacto*/
-
-    #contenedor__form{
-        padding-top: 80px;
-    }
-
-    #contenedor__form .columna__6 {
-        width: 100%;
-    }
-
-    #formulario__contacto {
-        padding: 0 80px;
-    }
-
-    #contenedor__ubicacion{
+  }
+  /*responsive contacto*/
+  #contenedor__form {
+    padding-top: 80px;
+  }
+  #contenedor__form .columna__6 {
+    width: 100%;
+  }
+  #formulario__contacto {
+    padding: 0 80px;
+  }
+  #contenedor__ubicacion {
+    -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-        padding: 60px 0;
-    }
-    
-    #contenedor__ubicacion .columna__2{
-        padding: 20px 20px;
-        width: 100%;
-    }
-
-    #contenedor__ubicacion .columna__6{
-        width: 100%;
-    }
+    padding: 60px 0;
+  }
+  #contenedor__ubicacion .columna__2 {
+    padding: 20px 20px;
+    width: 100%;
+  }
+  #contenedor__ubicacion .columna__6 {
+    width: 100%;
+  }
 }
 
 /*Tablets Horizontal*/
 @media screen and (min-width: 993px) and (max-width: 1112px) {
-    
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
-
-    #home__colecciones h2{
-        font-size: 60px;
-    }
-
-    .bloque__presentacion h2{
-        font-size: 72px;
-    }
-
-    #contenedor__info__footer{
-        padding: 60px 60px;
-    }
-
-    #nav__footer nav:first-child{
-        margin-bottom: 30px;
-    }
-
-    /*responsive about*/
-
-    #contenedor__inicio__about{
-        padding: 160px 0;
-    }
-
-    #contenedor__info__video{
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-
-    #info__about h1{
-        font-size: 60px;
-    }
-
-    #info__about p{
-        padding-right: 190px;
-    }
-
-    #contenedor__valores{
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    #valores__grid{
-        grid-gap: 40px 60px;
-    }
-
-    /*responsive lifestyle*/
-
-    #titulo__lifestyle{
+  #home__colecciones .columna__7 {
+    width: 100%;
+  }
+  #home__colecciones h2 {
+    font-size: 60px;
+  }
+  .bloque__presentacion h2 {
+    font-size: 72px;
+  }
+  #contenedor__info__footer {
+    padding: 60px 60px;
+  }
+  #nav__footer nav:first-child {
+    margin-bottom: 30px;
+  }
+  /*responsive about*/
+  #contenedor__inicio__about {
+    padding: 160px 0;
+  }
+  #contenedor__info__video {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #info__about h1 {
+    font-size: 60px;
+  }
+  #info__about p {
+    padding-right: 190px;
+  }
+  #contenedor__valores {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  #valores__grid {
+    grid-gap: 40px 60px;
+  }
+  /*responsive products*/
+  #contenedor__info__collections {
+    padding-top: 80px;
+  }
+  #contenedor__info__collections .columna__7 {
+    width: 100%;
+  }
+  /*responsive lifestyle*/
+  #titulo__lifestyle {
+    -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
-    }
-    
-    #titulo__lifestyle h1{
-       font-size: 72px;
-       margin-top: 99px;
-    }
-    
-    #contenedor__galeria__lifestyle{
+  }
+  #titulo__lifestyle h1 {
+    font-size: 72px;
+    margin-top: 99px;
+  }
+  #contenedor__galeria__lifestyle {
+    -ms-flex-preferred-size: 80%;
         flex-basis: 80%;
-    }
-
-    /*responsive contacto*/
-
-    #contenedor__form{
-        padding-top: 80px;
-    }
-
-    #contenedor__info__contacto p, #formulario__contacto{
-        padding: 0;
-    }
+  }
+  /*responsive contacto*/
+  #contenedor__form {
+    padding-top: 80px;
+  }
+  #contenedor__info__contacto p, #formulario__contacto {
+    padding: 0;
+  }
 }
+/*# sourceMappingURL=estilos.css.map */
