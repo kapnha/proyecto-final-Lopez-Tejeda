@@ -4,6 +4,12 @@
 
 @import "color";
 
+@mixin propiedades__fondo($size){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $size;
+}
+
 /*Reset*/
 
 *{
@@ -88,24 +94,22 @@ main > section{
         }
 }
 
-.columna__2{
-    width: 16.64%;
-}
+/*Map con each para valores de columna*/
 
-.columna__5{
-    width: 41.5%;
-}
+$columns:(
+    2: 16.64%,
+    5: 41.5%,
+    6: 50%,
+    7: 58.3%,
+    8: 66.56%
+);
 
-.columna__6{
-    width: 50%;
-}
+@each $columna, $porcentaje in $columns{
 
-.columna__7{
-    width: 58.3%;
-}
-
-.columna__8{
-    width: 66.56%;
+    .columna__#{$columna}{
+        width: $porcentaje;
+    }
+    
 }
 
 /*Estilos Header*/
@@ -204,9 +208,7 @@ header section{
     animation-duration: 2s;
     animation-iteration-count: infinite;
     background-image: url(../imagenes/delia-sabi-banner-home.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include propiedades__fondo(cover);
     height: 549px;
     left: 50%;
     margin-left: -183px;
@@ -318,9 +320,7 @@ header section{
 #contenedor__img__about{
     background-image: url(../imagenes/delia-sabi-about-1.jpeg);
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include propiedades__fondo(cover);
     height: 42.18vw;
     max-height: 600px;
     min-height: 300px;
@@ -417,10 +417,37 @@ header section{
     margin-bottom: 20px;
     text-align: center;
 
-        img{
-            height: auto;
+        .img__lifestyle{
+            @include propiedades__fondo(cover);
+            display: block;
             width: 100%;
         }
+
+        @for $turno from 1 through 12{
+
+            .img__lifestyle__#{$turno}{
+                @extend .img__lifestyle;
+                background-image: url(../imagenes/galeria/delia-sabi-lifestyle-#{$turno}.jpg);
+            }
+
+        }
+
+        .altura__400{
+            height: 400px;
+        }
+
+        .altura__210{
+            height: 210px;
+        }
+
+        .altura__190{
+            height: 190px;
+        }
+
+        .altura__140{
+            height: 140px;
+        }
+
 }
 
 /*Estilos Contacto*/
@@ -500,8 +527,7 @@ footer{
 
 #contenedor__img__footer{
     background-image: url(../imagenes/delia-sabi-footer.jpg);
-    background-size: cover;
-    background-position: center;
+    @include propiedades__fondo(cover);
     width: 40%;
 }
 
@@ -615,9 +641,7 @@ footer{
 
     #logo__header a{
         background-image: url(../imagenes/logo-delia-sabi-responsive.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
+        @include propiedades__fondo(contain);
         display: block;
         height: 30px;
         margin: 0 auto;
@@ -790,7 +814,7 @@ footer{
                     display: none;
                 }
             }
-            
+
             p {
                 padding: 0 8.4%;
                 padding-bottom: 80px ;
@@ -887,9 +911,7 @@ footer{
     #logo__header{
         a{
             background-image: url(../imagenes/logo-delia-sabi-responsive.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
+            @include propiedades__fondo(contain);
             display: block;
             height: 30px;
             margin: 0 auto;
@@ -1061,7 +1083,7 @@ footer{
 
      /*responsive lifestyle*/
 
-     #contenedor__lifestyle{
+    #contenedor__lifestyle{
         flex-wrap: wrap;
     }
 
@@ -1091,6 +1113,26 @@ footer{
     
     #contenedor__galeria__lifestyle > div#columna__galeria__2{
         flex-basis: 100%;
+    }
+
+    #contenedor__galeria__lifestyle article{
+
+        .altura__400{
+            height: 600px;
+        }
+    
+        .altura__210{
+            height: 320px;
+        }
+    
+        .altura__190{
+            height: 240px;
+        }
+    
+        .altura__140{
+            height: 210px;
+        }
+
     }
 
     /*responsive contacto*/
@@ -1251,6 +1293,26 @@ footer{
     
     #contenedor__galeria__lifestyle > div#columna__galeria__2{
         flex-basis: 100%;
+    }
+
+    #contenedor__galeria__lifestyle article{
+
+        .altura__400{
+            height: 600px;
+        }
+    
+        .altura__210{
+            height: 320px;
+        }
+    
+        .altura__190{
+            height: 240px;
+        }
+    
+        .altura__140{
+            height: 210px;
+        }
+
     }
 
     /*responsive contacto*/

@@ -12,13 +12,13 @@
   font-size: 24px;
 }
 
+.texto__72 {
+  font-size: 72px;
+}
+
 .texto__90 {
   font-size: 90px;
   line-height: 1.11em;
-}
-
-.texto__72 {
-  font-size: 72px;
 }
 
 .texto__120 {
@@ -146,6 +146,7 @@ main > section {
   color: #ffffff;
 }
 
+/*Map con each para valores de columna*/
 .columna__2 {
   width: 16.64%;
 }
@@ -536,9 +537,76 @@ header section {
   text-align: center;
 }
 
-#contenedor__galeria__lifestyle article img {
-  height: auto;
+#contenedor__galeria__lifestyle article .img__lifestyle, #contenedor__galeria__lifestyle article .img__lifestyle__1, #contenedor__galeria__lifestyle article .img__lifestyle__2, #contenedor__galeria__lifestyle article .img__lifestyle__3, #contenedor__galeria__lifestyle article .img__lifestyle__4, #contenedor__galeria__lifestyle article .img__lifestyle__5, #contenedor__galeria__lifestyle article .img__lifestyle__6, #contenedor__galeria__lifestyle article .img__lifestyle__7, #contenedor__galeria__lifestyle article .img__lifestyle__8, #contenedor__galeria__lifestyle article .img__lifestyle__9, #contenedor__galeria__lifestyle article .img__lifestyle__10, #contenedor__galeria__lifestyle article .img__lifestyle__11, #contenedor__galeria__lifestyle article .img__lifestyle__12 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
   width: 100%;
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__1 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-1.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__2 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-2.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__3 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-3.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__4 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-4.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__5 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-5.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__6 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-6.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__7 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-7.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__8 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-8.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__9 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-9.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__10 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-10.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__11 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-11.jpg);
+}
+
+#contenedor__galeria__lifestyle article .img__lifestyle__12 {
+  background-image: url(../imagenes/galeria/delia-sabi-lifestyle-12.jpg);
+}
+
+#contenedor__galeria__lifestyle article .altura__400 {
+  height: 400px;
+}
+
+#contenedor__galeria__lifestyle article .altura__210 {
+  height: 210px;
+}
+
+#contenedor__galeria__lifestyle article .altura__190 {
+  height: 190px;
+}
+
+#contenedor__galeria__lifestyle article .altura__140 {
+  height: 140px;
 }
 
 /*Estilos Contacto*/
@@ -626,8 +694,9 @@ footer {
 
 #contenedor__img__footer {
   background-image: url(../imagenes/delia-sabi-footer.jpg);
-  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 40%;
 }
 
@@ -1126,6 +1195,18 @@ footer {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  #contenedor__galeria__lifestyle article .altura__400 {
+    height: 600px;
+  }
+  #contenedor__galeria__lifestyle article .altura__210 {
+    height: 320px;
+  }
+  #contenedor__galeria__lifestyle article .altura__190 {
+    height: 240px;
+  }
+  #contenedor__galeria__lifestyle article .altura__140 {
+    height: 210px;
+  }
   /*responsive contacto*/
   #contenedor__form {
     padding-top: 80px;
@@ -1255,6 +1336,18 @@ footer {
   #contenedor__galeria__lifestyle > div#columna__galeria__2 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  #contenedor__galeria__lifestyle article .altura__400 {
+    height: 600px;
+  }
+  #contenedor__galeria__lifestyle article .altura__210 {
+    height: 320px;
+  }
+  #contenedor__galeria__lifestyle article .altura__190 {
+    height: 240px;
+  }
+  #contenedor__galeria__lifestyle article .altura__140 {
+    height: 210px;
   }
   /*responsive contacto*/
   #contenedor__form {

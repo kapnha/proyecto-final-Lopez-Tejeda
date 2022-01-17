@@ -1,26 +1,35 @@
+$text__sizes:(
+    t__14: 14px,
+    t__18: 18px,
+    t__24: 24px,
+    t__72: 72px,
+    t__90: 90px,
+    t__120: 120px
+);
+
 .texto__14{
-    font-size: 14px;
+    font-size: map-get($text__sizes, t__14);
 }
 
 .texto__18{
-    font-size: 18px;
+    font-size: map-get($text__sizes, t__18);
 }
 
 .texto__24{
-    font-size: 24px;
-}
-
-.texto__90{
-    font-size: 90px;
-    line-height: 1.11em;
+    font-size: map-get($text__sizes, t__24);
 }
 
 .texto__72{
-    font-size: 72px;
+    font-size: map-get($text__sizes, t__72);
+}
+
+.texto__90{
+    font-size: map-get($text__sizes, t__90);
+    line-height: 1.11em;
 }
 
 .texto__120{
-    font-size: 120px;
+    font-size: map-get($text__sizes, t__120);
 }
 
 .serif{
