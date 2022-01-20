@@ -2,6 +2,7 @@ $text__sizes:(
     t__14: 14px,
     t__18: 18px,
     t__24: 24px,
+    t__48: 48px,
     t__72: 72px,
     t__90: 90px,
     t__120: 120px
@@ -17,6 +18,10 @@ $text__sizes:(
 
 .texto__24{
     font-size: map-get($text__sizes, t__24);
+}
+
+.texto__48{
+    font-size: map-get($text__sizes, t__48);
 }
 
 .texto__72{

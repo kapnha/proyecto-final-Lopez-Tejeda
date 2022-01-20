@@ -235,11 +235,21 @@ header section{
 }
 
 #banner__inicio a span{
+    animation-name: scroll_down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     background-color: black;
     display: block;
     height: 40px;
     margin: 0 auto;
     width: 1px;
+}
+
+@keyframes scroll_down{
+    0%{height: 40px;}
+    40%{height: 10px;}
+    60%{height: 10px;}
+    100%{height: 40px;}
 }
 
 #home__colecciones{
@@ -384,6 +394,39 @@ header section{
         }
 }
 
+/*Estilos Catálogo Productos*/
+
+#titulo__productos{
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+}
+
+#productos{
+    padding: 80px 10px;
+    text-align: center;
+
+        article{
+            margin: 0 10px;
+            width: 25%;
+
+                img{
+                    width: 100%;
+                    transition: all ease-in-out 0.3s;   
+
+                    &:hover{
+                        transform: scale(1.05,1.05);
+                    }
+                }
+
+                h4{
+                    margin: 20px 0;
+                    padding: 0 20px;
+                }
+        }
+}
+
+
 /*Estilos Lifestyle*/
 
 #contenedor__lifestyle{
@@ -521,7 +564,7 @@ footer{
 }
 
 #contenedor__info__footer{
-    padding: 60px 150px;
+    padding: 60px 200px;
     width: 60%;
 }
 
@@ -685,7 +728,7 @@ footer{
             }
     }
 
-    #home__colecciones .columna__7{
+    #home__colecciones .columna__7, #titulo__productos .columna__7{ 
         width: 100%;
 
             h2{
@@ -698,7 +741,7 @@ footer{
             }
     }
 
-    #colecciones__productos{
+    #colecciones__productos, #productos{
         flex-wrap: wrap;
         padding: 40px 20px;
 
@@ -764,7 +807,7 @@ footer{
             }
     }
 
-    #contenedor__inicio__about .columna__6{
+    #contenedor__inicio__about .columna__5{
         width: 100%;
     }
 
@@ -962,7 +1005,15 @@ footer{
             }
     }
 
-    #colecciones__productos{
+    #titulo__productos .columna__7{
+        width: 100%;
+
+            h2{
+                font-size: 32px;
+            }
+    }
+
+    #colecciones__productos, #productos{
         flex-wrap: wrap;
         padding: 60px 40px;
 
@@ -998,7 +1049,7 @@ footer{
     }
 
     #contenedor__info__footer{
-        padding: 80px 40px;
+        padding: 60px 120px;
         width: 100%;
     }
 
@@ -1029,7 +1080,7 @@ footer{
             }
     }
 
-    #contenedor__inicio__about .columna__6{
+    #contenedor__inicio__about .columna__5{
         width: 100%;
     }
 
@@ -1171,16 +1222,16 @@ footer{
 
 /*Tablets Vertical*/
 @media screen and (min-width: 768px) and (max-width: 992px){
-    
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
 
     #home__colecciones h2{
         font-size: 60px;
     }
+    
+    #home__colecciones .columna__7, #titulo__productos .columna__7{
+        width: 100%;
+    }
 
-    #colecciones__productos{
+    #colecciones__productos, #productos{
         flex-wrap: wrap;
         padding: 60px 40px;
 
@@ -1214,6 +1265,18 @@ footer{
     }
 
     /*responsive about*/
+
+    #contenedor__inicio__about{
+        padding: 120px 80px;
+        
+            h1{
+                font-size: 21px;
+            }
+    }
+
+    #contenedor__inicio__about .columna__5{
+        width: 75%;
+    }
 
     #contenedor__info__video{
         padding-left: 40px;
@@ -1347,12 +1410,12 @@ footer{
 /*Tablets Horizontal*/
 @media screen and (min-width: 993px) and (max-width: 1112px) {
     
-    #home__colecciones .columna__7{
-        width: 100%;
-    }
-
     #home__colecciones h2{
         font-size: 60px;
+    }
+
+    #home__colecciones .columna__7, #titulo__productos .columna__7{
+        width: 100%;
     }
 
     .bloque__presentacion h2{
@@ -1360,7 +1423,7 @@ footer{
     }
 
     #contenedor__info__footer{
-        padding: 60px 60px;
+        padding: 60px 120px;
     }
 
     #nav__footer nav:first-child{

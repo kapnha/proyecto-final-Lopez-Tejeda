@@ -71,7 +71,7 @@
 
     <!--Contenido-->
     <main>
-        <section id="banner__inicio">
+        <section id="banner__inicio" class="wow bounceInUp">
             <h1 class="serif texto__72">Fashion <br> Lifestyle Jewelry</h1>
             <div id="banner__inicio__img"></div>
             <a href="#home__colecciones">Explore Collection <span></span></a>
@@ -85,32 +85,32 @@
             </div>
         </section>
         <section class="fondo__marron texto__blanco" id="colecciones__productos">
-            <article>
+            <article class="wow fadeInRight" data-wow-delay="0.5s">
                 <img src="./imagenes/delia-sabi-rings-home.jpeg" alt="delia sabi jewelry rings">
                 <h4 class="serif texto__18">Engagement Rings</h4>
                 <p class="texto__14">We offer you a unique collection of engagement rings that will guide you in the right direction.</p>
-                <a class="boton__lineal" href="./paginas/contact.html">Quote Now</a>
+                <a class="boton__lineal" href="./paginas/engagement-rings.html">View Products</a>
             </article>
-            <article>
+            <article class="wow fadeInRight" data-wow-delay="1s">
                 <img src="./imagenes/delia-sabi-bracelets-home.jpeg" alt="delia sabi jewelry bracelets">
                 <h4 class="serif texto__18">Bracelets</h4>
                 <p class="texto__14">The ideal bracelet is the one that accompanies you and celebrates every special moment with you.</p>
-                <a class="boton__lineal" href="./paginas/contact.html">Quote Now</a>
+                <a class="boton__lineal" href="./paginas/bracelets.html">View Products</a>
             </article>
-            <article>
+            <article class="wow fadeInRight" data-wow-delay="1.5s">
                 <img src="./imagenes/delia-sabi-earrings-home.jpg" alt="delia sabi jewelry earrings">
                 <h4 class="serif texto__18">Earrings</h4>
                 <p class="texto__14">Personality is defined with details that enhance your essence. Discover which is the earring that goes with your identity.</p>
-                <a class="boton__lineal" href="./paginas/contact.html">Quote Now</a>
+                <a class="boton__lineal" href="./paginas/earrings.html">View Products</a>
             </article>
-            <article>
+            <article class="wow fadeInRight" data-wow-delay="2s">
                 <img src="./imagenes/delia-sabi-neacklace-home.jpg" alt="delia sabi jewelry neacklace">
                 <h4 class="serif texto__18">Neacklace</h4>
                 <p class="texto__14">Distinction and elegance go hand in hand when choosing to wear a necklace regardless of its design.</p>
-                <a class="boton__lineal" href="./paginas/contact.html">Quote Now</a>
+                <a class="boton__lineal" href="./paginas/necklaces.html">View Products</a>
             </article>
         </section>
-        <section class="bloque__presentacion fondo__beige">
+        <section class="bloque__presentacion fondo__beige wow fadeInRight" data-wow-delay="0.75s">
             <div class="columna__5">
                 <h2 class="serif texto__90">Style & Innovation</h2>
                 <p>
@@ -161,5 +161,13 @@
         <section id="contenedor__img__footer">
         </section>
     </footer>
+
+    <!--Animacion WOW-->
+    <link rel="stylesheet" href="./wow/animate.css">
+    <script src="./wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
 </body>
 </html>
